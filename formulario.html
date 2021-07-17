@@ -1,0 +1,104 @@
+<h1>Cadastro de Aluno</h1>
+
+<form action="">
+
+  <fieldset>
+    <legend><strong>Dados Pessoais</strong></legend>
+
+    <label for="nome">Qual o seu nome?</label>
+    <br>
+    <input id="nome" placeholder="Digite o nome completo" type="text" required>
+    <br><br>
+
+    <label for="email">Qual o seu Email?</label><br>
+    <input type="email" id="email" required>
+    <br><br>
+
+    <label for="idade">Qual a sua idade?</label><br>
+    <input type="number" id="idade" min="14" max="90" required>
+    <br><br>
+
+    <label for="senha">Informe uma senha</label><br>
+    <input type="password" id="senha" minlength="8">
+  </fieldset>
+
+  <br>
+  <fieldset>
+    <legend>Dados do Curso</legend>
+
+    <label for="data">Qual a data que vc iniciará o curso?</label><br>
+    <input type="date" id="data">
+    <br><br>
+
+    <label for="cor">Qual a cor da camiseta?</label><br>
+    <input type="color" id="cor">
+    <br><br>
+
+    <p>Qual turno mais lhe agrada?</p>
+
+    <input name="turno" type="radio" id="manha" value="Manhã">
+    <label for="manha">Manhã</label><br>
+
+    <input name="turno" type="radio" id="tarde" value="Tarde">
+    <label for="tarde">Tarde</label><br>
+
+    <input name="turno" type="radio" id="noite" value="Noite">
+    <label for="noite">Noite</label>
+
+
+    <br><br>
+    <p>Quais cursos você tem interesse?</p>
+    <input type="checkbox" value="PHP-2021" id="php" name="cursos[]">
+    <label for="php">PHP</label><br>
+
+    <input type="checkbox" value="FRONT-2021" id="front" name="cursos[]">
+    <label for="front">Frontend</label><br>
+
+    <input type="checkbox" value="PYTHON-2021" id="python" name="cursos[]">
+    <label for="python">Python</label><br>
+  </fieldset>
+
+  <br>
+
+  <fieldset>
+    <legend>Informações Adicionais</legend>
+
+    <label for="foto">Envie uma foto 3x4</label><br>
+    <input type="file" id="foto">
+
+    <br><br>
+
+    <label for="pesquisa">Seu nivel de satisfação?</label>
+    0
+    <input type="range">
+    5
+
+    <input type="hidden" name="token" value="1q2w3e4r">
+
+    <br><br>
+    <label for="cidade">Selecione sua cidade</label><br>
+    <select id="cidade">
+      <option selected disabled> -- Selecione -- </option>
+      <optgroup label="Ceará">
+        <option>Fortaleza</option>
+        <option>Caucaia</option>
+        <option>Maranguape</option>
+        <option>Palhano</option>
+        <option>Tauá</option>
+      </optgroup>
+      <optgroup label="Paraiba">
+        <option>João Pessoa</option>
+        <option>Campina Grande</option>
+      </optgroup>
+    </select>
+
+    <br><br>
+
+    <label for="msg">Deixe uma mensagem</label><br>
+    <textarea id="msg" placeholder="Digite aqui"></textarea>
+  </fieldset>
+
+
+  <br><br>
+  <button>Enviar</button>
+</form>
