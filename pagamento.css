@@ -1,0 +1,50 @@
+body {
+  font-family: 'Bariol', sans-serif;
+  background-color: #BBBBBB;
+}
+
+.formulario {
+  width: 40%;
+  margin-left: 30%;
+  margin-top: 50px;
+  border: 1px solid #666666;
+  text-align: center;
+  border-radius: 20px;
+  background-color: #FFFFFF;
+  box-shadow: 5px 5px 20px 5px #444444;
+  padding: 10px 0;
+}
+
+hr {
+  width: 60%;
+  border: 1px solid #CCCCCC;
+}
+
+form {
+  text-align: left;
+  padding: 0 40px;
+}
+
+input, select {
+  background-color: #FFFFFF;
+  border: 1px solid #CCCCCC;
+  height: 40px;
+  font-size: 1.2rem;
+}
+
+input {
+  width: 100%;
+}
+
+button {
+  width: 100%;
+  height: 40px;
+  font-size: 1.4rem;
+}
+
+
+
+button:hover {
+  background-color: #0E6700;
+  color: #FFFFFF;
+}

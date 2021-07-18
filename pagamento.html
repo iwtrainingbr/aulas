@@ -1,0 +1,63 @@
+<link rel="stylesheet" href="pagamento.css">
+
+<div class="formulario">
+
+  <h1>Pagamento</h1>
+  <hr>
+  <form action="">
+    <label for="numero">Número do cartão</label><br>
+    <input
+      type="text"
+      id="numero"
+      pattern="[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}"
+      placeholder="Ex: 1234 1234 1234 1234"
+      required
+    >
+    <br><br>
+
+    <label for="codigo">Código de segurança do cartão</label><br>
+    <input
+      type="text"
+      id="codigo"
+      pattern="[0-9]{3}"
+      placeholder="Ex: 123"
+      required
+    >
+    <br><br>
+
+    <label for="validade">Data de validade</label>
+    <br>
+    <select id="validade">
+      <option selected disabled>Mês</option>
+      <option>Janeiro</option>
+      <option>Fevereiro</option>
+      <option>Março</option>
+    </select>
+    <select>
+      <option selected disabled>Ano</option>
+      <option>2021</option>
+      <option>2022</option>
+      <option>2023</option>
+    </select>
+    <br><br>
+
+    <label for="nome">Nome do titula</label><br>
+    <input type="text" id="nome" required><br><br>
+
+    <label for="cpf">CPF do titular do cartão</label><br>
+    <input
+      type="text"
+      id="cpf"
+      pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}"
+      placeholder="Ex: 123.123.123-12"
+      required
+    >
+    <br><br>
+
+  <input type="range">
+
+
+    <br><br>
+    <button>Enviar</button>
+  </form>
+  </div>
